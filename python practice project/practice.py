@@ -734,12 +734,12 @@ to correct it we used the above code.....'''
 # print("a:", a)
 # print("b:", b)
 
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-z = 0
-for i in range(len(x)):
-        z = x[i] + z
+# x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# z = 0
+# for i in range(len(x)):
+#         z = x[i] + z
 
-print(z)
+# print(z)
 
 
 # my_list = [10, 1, 8, 3, 5]
@@ -766,4 +766,6 @@ print(z)
 # print(lst_2)
 # print(lst)
 
+
+8, 10, 6, 2, 4
 
