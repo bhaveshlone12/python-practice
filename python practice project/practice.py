@@ -766,43 +766,46 @@ to correct it we used the above code.....'''
 # print(lst_2)
 # print(lst)
 
-
+'''============================================================================================================================'''
 
                     #   sorting 
                     #   1. bubble sort
 
-print("CURRENTLY WE ARE LEARNINGN ABOUT SORTING, " \
-        "WE ARE USING BUBBLE SORT PROCESS, " \
-        "IN THIS WE CREAT FOR LOOPS TO SORT THE LIST")
+# print("CURRENTLY WE ARE LEARNINGN ABOUT SORTING, " \
+#         "WE ARE USING BUBBLE SORT PROCESS, " \
+#         "IN THIS WE CREAT FOR LOOPS TO SORT THE LIST")
 
-my_list = [8, 10, 6, 2, 4]
-count = 0
-print("original list:", my_list)
+# my_list = [8, 10, 6, 2, 4]
+# count = 0
+# print("original list:", my_list)
 
-for index1 in range(len(my_list) - 1):
-    for index in range(len(my_list) - 1):
-        count += 1
-        if (my_list[index] > my_list[index + 1]):
-            my_list[index], my_list[index +1] = my_list[index +1], my_list[index]
+# for index1 in range(len(my_list) - 1):
+#     for index in range(len(my_list) - 1):
+#         count += 1
+#         if (my_list[index] > my_list[index + 1]):
+#             my_list[index], my_list[index +1] = my_list[index +1], my_list[index]
 
-print(f"sorted list: {my_list}")
-print(f"my program has run for : {count} times")
+# print(f"sorted list: {my_list}")
+# print(f"my program has run for : {count} times")
 
-'''-----------------------------------------------------------------------------------------------------------------------------'''
 
-print("IN THIS WE JUST ADDED '- index1' FOR THIS LOOP 'for index in range(len(my_list) - 1):'," \
-"       SO IT BECAME THIS 'for index in range(len(my_list) - 1 - index1):', " \
-"       THIS REDUSES THE NUMBER OF ITRATIONS AND MADE IT MORE EFFICIENT.")
+'''============================================================================================================================'''
 
-my_list = [8, 10, 6, 2, 4]
-count = 0
-print("original list:", my_list)
 
-for index1 in range(len(my_list) - 1):
-    for index in range(len(my_list) - 1 - index1):
-        count += 1
-        if (my_list[index] > my_list[index + 1]):
-            my_list[index], my_list[index +1] = my_list[index +1], my_list[index]
+# print("IN THIS WE JUST ADDED '- index1' FOR THIS LOOP 'for index in range(len(my_list) - 1):'," \
+# "       SO IT BECAME THIS 'for index in range(len(my_list) - 1 - index1):', " \
+# "       THIS REDUSES THE NUMBER OF ITRATIONS AND MADE IT MORE EFFICIENT.")
 
-print(f"sorted list: {my_list}")
-print(f"my program has run for : {count} times")
+# my_list = [8, 10, 6, 2, 4]
+# count = 0
+# print("original list:", my_list)
+
+# for index1 in range(len(my_list) - 1):
+#     for index in range(len(my_list) - 1 - index1):
+#         count += 1
+#         if (my_list[index] > my_list[index + 1]):
+#             my_list[index], my_list[index +1] = my_list[index +1], my_list[index]
+
+# print(f"sorted list: {my_list}")
+# print(f"my program has run for : {count} times")
+
