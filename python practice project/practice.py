@@ -809,3 +809,70 @@ to correct it we used the above code.....'''
 # print(f"sorted list: {my_list}")
 # print(f"my program has run for : {count} times")
 
+
+                    # used while loop and used swapped as an variable.
+
+# my_list = [8, 10, 6, 2, 4]
+# swapped = True           #its a little fake, we need to enter the while loop. 
+# count = 0
+# print("original list:", my_list)
+
+# while swapped:
+#     swapped = False # no swaps sp far.
+#     for i in range(len(my_list) - 1):
+#         count += 1
+#         if (my_list[i] > my_list[i + 1]):
+#             swapped = True # a swap occurred.
+#             my_list[i], my_list[i +1] = my_list[i +1], my_list[i]
+
+# print(f"sorted list: {my_list}")
+# print(f"my program has run for : {count} times")
+
+                # used swapped in for loop to increass the efficinecy.
+
+# my_list = [1, 2, 3, 4, 5]
+# swapped = 0
+# count = 0
+# print("original list:", my_list)
+
+# for index1 in range(len(my_list) - 1):
+#     for index in range(len(my_list) - 1 - index1):
+#         count += 1
+#         if (my_list[index] > my_list[index + 1]):
+#             my_list[index], my_list[index +1] = my_list[index +1], my_list[index]
+#     if swapped == 0:
+#         break
+        
+# print(f"sorted list: {my_list}")
+# print(f"my program has run for : {count} times")
+
+
+
+                #   using sort function***************
+
+
+
+# my_list = [8, 10, 6, 2, 4]
+# my_list.sort()
+# print(my_list)
+
+
+'''reverse the list'''
+
+my_list = [1, 2, 3, 4, 5]
+swapped = True
+count = 0
+print(f"my original list: {my_list}")
+
+print((len(my_list) // 2))
+
+for i in range(len(my_list) // 2):
+    #print((len(my_list) // 2))
+    my_list[i], my_list[-1 * (i + 1)] = my_list[-1 * (i + 1)], my_list[i]
+
+print(my_list)
+
+'''
+range   
+0 - 4
+'''
