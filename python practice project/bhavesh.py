@@ -81,7 +81,7 @@ while x <= len(num):
     if x == len(num):
         print(x)
         break
-    else:
+else:
         print("x dose not exsist")
 
-        break
+        

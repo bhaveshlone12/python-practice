@@ -859,20 +859,92 @@ to correct it we used the above code.....'''
 
 '''reverse the list'''
 
-my_list = [1, 2, 3, 4, 5]
-swapped = True
-count = 0
-print(f"my original list: {my_list}")
+# my_list = [1, 2, 3, 4, 5]
+# swapped = True
+# count = 0
+# print(f"my original list: {my_list}")
 
-print((len(my_list) // 2))
+# print((len(my_list) // 2))
 
-for i in range(len(my_list) // 2):
-    #print((len(my_list) // 2))
-    my_list[i], my_list[-1 * (i + 1)] = my_list[-1 * (i + 1)], my_list[i]
+# for i in range(len(my_list) // 2):
+#     #print((len(my_list) // 2))
+#     my_list[i], my_list[-1 * (i + 1)] = my_list[-1 * (i + 1)], my_list[i]
 
-print(my_list)
+# print(my_list)
 
 '''
-range   
-0 - 4
+[a, b, c, d. e, f, g]
+[g, f, e, d, c, b, a]
+
+0 - -1
+1 - -2
+-1 * (index - 1)      # minus index
+
+
+[a, b, c, d. e, f, g, h, i, j]
+
+loop = 5
+
+a = j
+0 = -1 => (-1 * (index * 1))
+index => len(list) - (index + 1)      # positive index
 '''
+
+# lst = ["D", "F", "a", "Z"]
+# lst.sort()
+# print(lst)
+
+
+# print("A" > "a")  # output false as per thr acii value the acii value of a > A (acii value of a is 97, acii value pf A is 65)
+
+# a = 3
+# b = 1
+# c = 2
+# lst = [a, c, b]
+# lst.sort()
+# print(lst)
+
+
+# a = "A"
+# b = "B"
+# c = "C"
+# d = " "
+
+# lst = [a, b, c, d]
+# lst.reverse()
+# print(lst)
+
+# a = 1
+# b = a
+# a= 2
+# print(a)
+# print(b)
+
+
+# lst_1 = [1]
+# lst_2 = lst_1   # reference copy (reference copy is used for copying the address of the first reference)
+# lst_1[0] = 2
+# print(lst_2)
+
+
+# lst_1 = [1, 2, 3, 4]
+# lst_2 = lst_1[0:2]    # we can provide the index before and after : like 0:2 so take only 0,1 and exclude 2 just like range works from n to n-1.
+# lst_1[0] = 2
+# print(f"list 2: {lst_2}")
+# print(f"list 1: {lst_1}")
+
+my_list = [1, 2, 3, 4]
+new_list = my_list[1:3]    # we can provide the index before and after : like 0:2 so take only 0,1 and exclude 2 just like range works from n to n-1.
+
+print(new_list)
+
+
+new_list = my_list[1:-1]
+print(new_list)
+
+
+new_list = my_list[-1:1]
+print(new_list)
+
+
+print(ord(" "))     # use ord function to find the acii value of anything.
