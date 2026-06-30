@@ -73,15 +73,28 @@
 
 '''search for the value x in the following list'''
 
-num = (1, 4, 9, 16, 36, 49, 64, 81, 100)
+# num = (1, 4, 9, 16, 36, 49, 64, 81, 100)
 
-x = int(input("enter a number: "))
-i  = 0
-while x <= len(num):
-    if x == len(num):
-        print(x)
-        break
-else:
-        print("x dose not exsist")
+# x = int(input("enter a number: "))
+# i  = 0
+# while x <= len(num):
+#     if x == len(num):
+#         print(x)
+#         break
+# else:
+#         print("x dose not exsist")
 
         
+''' need to work on line 953'''
+
+i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+index1 = 0
+
+for index in range(len(i)):
+    if i[index] > index1 :
+        index  = index1
+    # if index <= index in range(len(i) - 1):
+
+else:
+    print(i[index])

@@ -922,29 +922,93 @@ index => len(list) - (index + 1)      # positive index
 
 
 # lst_1 = [1]
-# lst_2 = lst_1   # reference copy (reference copy is used for copying the address of the first reference)
+# lst_2 = lst_1   # reference copy (reference copy is used for copying the address of the first reference, also known as refernce variable.)
 # lst_1[0] = 2
 # print(lst_2)
 
 
 # lst_1 = [1, 2, 3, 4]
-# lst_2 = lst_1[0:2]    # we can provide the index before and after : like 0:2 so take only 0,1 and exclude 2 just like range works from n to n-1.
+# lst_2 = lst_1[0:2]    # we can provide the index before and after : like 0:2 so take only 0,1 and exclude 2 just like range works from n to n-1. this process is known as slicing.
 # lst_1[0] = 2
 # print(f"list 2: {lst_2}")
 # print(f"list 1: {lst_1}")
 
-my_list = [1, 2, 3, 4]
-new_list = my_list[1:3]    # we can provide the index before and after : like 0:2 so take only 0,1 and exclude 2 just like range works from n to n-1.
+# my_list = [1, 2, 3, 4]
+# new_list = my_list[1:3]    # we can provide the index before and after : like 0:2 so take only 0,1 and exclude 2 just like range works from n to n-1.
 
-print(new_list)
-
-
-new_list = my_list[1:-1]
-print(new_list)
+# print(new_list)
 
 
-new_list = my_list[-1:1]
-print(new_list)
+# new_list = my_list[1:-1]
+# print(new_list)
 
 
-print(ord(" "))     # use ord function to find the acii value of anything.
+# new_list = my_list[-1:1]
+# print(new_list)
+
+
+# print(ord(" "))     # use ord function to find the acii value of anything.
+
+
+# my_list  = [10, 8, 6, 4, 2]
+# del my_list
+# print(my_list)      # outpt will be error, because my_list dose not exist due to del keyword.
+
+
+# my_list = [0, 3, 12, 8, 2]
+# print(5 in my_list)     # in checks weather the element exist in the list, if not then false, if yes the true.
+# print(5 not in my_list)     # not checks weather the  element dose not exist in the list, if not then true, if yes the false.
+# print(12 in my_list)
+
+''' find the largest in the list?'''
+
+
+''' 1st approach '''
+
+# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+# largest = 0
+
+# for element in range(len(i)):
+#     if largest < i[element]:
+#         largest = i[element]
+# else:
+#     print(largest)
+
+
+
+''' second approach '''
+
+
+# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+# largest = i[0]
+
+# for element in range(len(i)):
+#     if largest < i[element]:
+#         largest = i[element]
+# else:
+#     print(largest)
+
+
+'''___________________________________________________________________________________________________________________________________________'''
+
+
+# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+# l = 5
+
+# for index in range(len(i)):
+#     if l == i[index]:
+#         print(index)
+#         break
+
+i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+l = int(input("number: "))
+
+for index in range(len(i)):
+    if l == i[index]:
+        print(index)
+        break
+
