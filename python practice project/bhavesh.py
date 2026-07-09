@@ -268,34 +268,34 @@ name = of the person
 
 '''
 
-# name_1 = input("name of the person 1: ")
-# name_2 = input("name of the person 2: ")
+name_1 = input("name of the person 1: ")
+name_2 = input("name of the person 2: ")
 
-# basic_income = 85528
+basic_income = 85528
 
-# income_1 = float(input("income of the person 1: "))
-# #gst 18 %, if income < 85,528, then minus 556.2
-# #gst 32 %, if income > 85,528, then tax = 14,839.2  + 32% over 85,528.
-# income_2 = float(input("income of the person 2: "))
+income_1 = float(input("income of the person 1: "))
+#gst 18 %, if income < 85,528, then minus 556.2
+#gst 32 %, if income > 85,528, then tax = 14,839.2  + 32% over 85,528.
+income_2 = float(input("income of the person 2: "))
 
-# tax = 0
+tax = 0
 
-# if income_1 <= basic_income:
-#     tax = ((income_1/100)*18) - 556.2
-#     print(f'{name_1}, income = {income_1}, tax = {tax:.2f}')
+if income_1 <= basic_income:
+    tax = ((income_1/100)*18) - 556.2
+    print(f'name: {name_1}, income = {income_1}, tax = {tax:.2f}')
     
-# elif income_1 >= 85528:
-#     tax = (((income_1-85528)/100)*32) + 14839.2
-#     print(f'{name_1}, income = {income_1}, tax = {tax:.2f}')
+elif income_1 >= basic_income:
+    tax = (((income_1-basic_income)/100)*32) + 14839.2
+    print(f'name: {name_1}, income = {income_1}, tax = {tax:.2f}')
 
 
-# if income_2 <= basic_income:
-#     tax = ((income_2/100)*18) - 556.2
-#     print(f'{name_2}, income = {income_2}, tax = {tax:.2f}')
+if income_2 <= basic_income:
+    tax = ((income_2/100)*18) - 556.2
+    print(f'name: {name_2}, income = {income_2}, tax = {tax:.2f}')
     
-# elif income_2 >= 85528:
-#     tax = (((income_2-85528)/100)*32) + 14839.2
-#     print(f'{name_2}, income = {income_2}, tax = {tax:.2f}')
+elif income_2 >= basic_income:
+    tax = (((income_2-basic_income)/100)*32) + 14839.2
+    print(f'name: {name_2}, income = {income_2}, tax = {tax:.2f}')
 
 
 '''
@@ -324,3 +324,4 @@ name = of the person
 #         print("odd number")
         
 #     num = int(input("enter a number: "))
+# print("you just entered 0")

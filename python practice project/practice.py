@@ -980,15 +980,15 @@ index => len(list) - (index + 1)      # positive index
 ''' second approach '''
 
 
-# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
 
-# largest = i[0]
+largest = i[0]
 
-# for element in range(len(i)):
-#     if largest < i[element]:
-#         largest = i[element]
-# else:
-#     print(largest)
+for element in range(len(i)):
+    if largest < i[element]:
+        largest = i[element]
+else:
+    print(largest)
 
 
 '''___________________________________________________________________________________________________________________________________________'''
@@ -1003,12 +1003,98 @@ index => len(list) - (index + 1)      # positive index
 #         print(index)
 #         break
 
-i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
 
-l = int(input("number: "))
+# l = int(input("number: "))
 
-for index in range(len(i)):
-    if l == i[index]:
-        print(index)
-        break
+# for index in range(len(i)):
+#       if l == i[index]:
+#         print("5 is found at index: ", index)
+#         break
 
+'''___________________________________________________________________________________________________________________________________________'''
+
+# i = 1
+# j = not not i
+# print(i)
+# print(j)
+
+'''
+Truthy:         1, 2, 3, -1, 28, "a", "hello", [1, 2], {1:1}, " "
+Falsy:          0, "", [], {}, (), None, NULL
+'''
+
+
+
+'''     List        '''
+
+'''     
+        Question            
+
+why we use use 0 index rather then 1?
+
+        Answer
+
+In programming, indexing starts at 0 because an index represents an offset (a distance) from the starting point of a memory block, 
+rather than a count of items. The first element is exactly zero steps away from the beginning.
+
+This zero-based convention fundamentally boils down to efficiency and how computer memory is accessed:
+
+Pointer Math: When a computer retrieves data from an array, it uses the formula: Target Address = Base Address + (Index x Size of Element). 
+If indexing started at 1, 
+the computer would have to execute an extra subtraction step (Index - 1) before calculating the memory address.
+
+zero exactly stores the address rather then count, thats makes it easy the acces the first step, it represents 
+that the 1st element is zero step away from you. 
+
+'''
+
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+print(type(numbers))
+
+print(numbers[0])
+print(numbers[1])
+print(numbers[2])
+print(numbers[3])
+print(numbers[4])
+
+numbers[3] = 20
+print(numbers)
+
+numbers[2] = numbers[4]
+print(numbers)
+
+numbers[2], numbers[1] = numbers[1], numbers[2]
+print(numbers)
+
+
+numbers = [1, 2, 3, 4, 5]
+print(len(numbers))
+
+
+del numbers[4]
+print(numbers)
+
+print(len(numbers))
+
+len_of_list = len(numbers)
+print(len_of_list)
+
+print(numbers[-1])
+print(numbers[-2])
+print(numbers[-3])
+print(numbers[-4])
+
+
+a = 10
+print("Variable a: ", a)
+
+print("Address of Variable a in integers: ", id(a))
+print("Address of Variable a in hex (hexa-decima): ", id(a))
+
+print(hex(id(numbers)))
+print(hex(id(numbers[0])))
+print(hex(id(numbers[1])))
+print(hex(id(numbers[2])))
