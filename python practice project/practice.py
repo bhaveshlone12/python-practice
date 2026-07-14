@@ -980,15 +980,15 @@ index => len(list) - (index + 1)      # positive index
 ''' second approach '''
 
 
-i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
 
-largest = i[0]
+# largest = i[0]
 
-for element in range(len(i)):
-    if largest < i[element]:
-        largest = i[element]
-else:
-    print(largest)
+# for element in range(len(i)):
+#     if largest < i[element]:
+#         largest = i[element]
+# else:
+#     print(largest)
 
 
 '''___________________________________________________________________________________________________________________________________________'''
@@ -1050,51 +1050,100 @@ that the 1st element is zero step away from you.
 '''
 
 
-numbers = [1, 2, 3, 4, 5]
-print(numbers)
-print(type(numbers))
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers)
+# print(type(numbers))
 
-print(numbers[0])
-print(numbers[1])
-print(numbers[2])
-print(numbers[3])
-print(numbers[4])
+# print(numbers[0])
+# print(numbers[1])
+# print(numbers[2])
+# print(numbers[3])
+# print(numbers[4])
 
-numbers[3] = 20
-print(numbers)
+# numbers[3] = 20
+# print(numbers)
 
-numbers[2] = numbers[4]
-print(numbers)
+# numbers[2] = numbers[4]
+# print(numbers)
 
-numbers[2], numbers[1] = numbers[1], numbers[2]
-print(numbers)
-
-
-numbers = [1, 2, 3, 4, 5]
-print(len(numbers))
+# numbers[2], numbers[1] = numbers[1], numbers[2]
+# print(numbers)
 
 
-del numbers[4]
-print(numbers)
-
-print(len(numbers))
-
-len_of_list = len(numbers)
-print(len_of_list)
-
-print(numbers[-1])
-print(numbers[-2])
-print(numbers[-3])
-print(numbers[-4])
+# numbers = [1, 2, 3, 4, 5]
+# print(len(numbers))
 
 
-a = 10
-print("Variable a: ", a)
+# del numbers[4]
+# print(numbers)
 
-print("Address of Variable a in integers: ", id(a))
-print("Address of Variable a in hex (hexa-decima): ", id(a))
+# print(len(numbers))
 
-print(hex(id(numbers)))
-print(hex(id(numbers[0])))
-print(hex(id(numbers[1])))
-print(hex(id(numbers[2])))
+# len_of_list = len(numbers)
+# print(len_of_list)
+
+# print(numbers[-1])
+# print(numbers[-2])
+# print(numbers[-3])
+# print(numbers[-4])
+
+
+# a = 10
+# print("Variable a: ", a)
+
+# print("Address of Variable a in integers: ", id(a))
+# print("Address of Variable a in hex (hexa-decima): ", id(a))
+
+# print(hex(id(numbers)))
+# print(hex(id(numbers[0])))
+# print(hex(id(numbers[1])))
+# print(hex(id(numbers[2])))
+
+'''     append & insert     '''
+
+# list = [5,4,3,2,1]
+# print(list)
+# list.append(6)              #append (used to insert at last index of the of the list.)
+# print(list)
+# list.insert(0,222)          #insert   (used to insert at desired index)
+# print(len(list))
+# print(list)
+
+# list[0],list[6] = list[6],list[0]       #swapping (used to swap index 0 & 6 with each other.)
+# print(list)
+
+# del list[6]             #delet
+# print(list)
+
+''' can you wirte a program to traverse a list'''
+
+# list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# for index in range(len(list)):
+#     print(list[index])         
+
+''' index represents the entire elements index from 0th index to 9th index, to print element of the list we use list[0], list[1]
+but we need to use loop, and that's how its done.
+
+
+for index in range(len(list)):
+    print(list[index])         
+'''
+
+'''     question        
+
+write a program to insert 10 numbers starting fron 1 to 10 a  list
+'''
+
+list = []
+
+# for i in range(1,11):
+#     list.insert(i,i)
+# print(list)
+
+i = 1
+
+while i < 11:
+    list.append(i)
+    i +=1
+print(list)
