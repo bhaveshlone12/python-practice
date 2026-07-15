@@ -1134,16 +1134,150 @@ for index in range(len(list)):
 
 write a program to insert 10 numbers starting fron 1 to 10 a  list
 '''
-
-list = []
+'''     used for loop       '''
+# list = []
 
 # for i in range(1,11):
 #     list.insert(i,i)
 # print(list)
 
-i = 1
+'''     used while loop     '''
 
-while i < 11:
-    list.append(i)
-    i +=1
-print(list)
+# list = []
+# i = 1
+
+# while i < 11:
+#     list.append(i)
+#     i +=1
+# print(list)
+
+'''     Bubble sorting       '''
+
+# list = [8, 10, 6, 2, 4]
+
+# print("Current list: ", list)
+
+# for index in range(len(list)- 1):
+#     for index_inner in range(len(list)- 1):
+#         if list[index_inner] > list[index_inner + 1]:
+#             list[index_inner],list[index_inner + 1] = list[index_inner +1 ],list[index_inner]
+# print("Sorted list: ", list)
+
+'''
+dry run 
+
+Current list:  [8, 6, 2, 4, 10]
+
+index           0
+index_inner     0   1   2   3
+'''
+
+# list = [8, 10, 6, 2, 4]
+
+# print(list)
+
+# count = 0
+
+# for i in range(len(list)- 1):
+#     for i_n in range(len(list)- 1):
+#         if list[i_n] > list[i_n + 1]:
+#             list[i_n], list[i_n + 1] = list[i_n + 1], list[i_n]
+#         count += 1
+# print(list)
+# print(count)
+
+'''     efficient       '''
+
+# list = [8, 10, 6, 2, 4]
+
+# print("Current list: ", list)
+
+# count = 0
+# swapped = False
+
+# for index in range(len(list)- 1):
+#     for index_inner in range(len(list)- 1 - index):
+#         if list[index_inner] > list[index_inner + 1]:
+#             list[index_inner],list[index_inner + 1] = list[index_inner +1 ],list[index_inner]
+#             swapped = False
+#         count += 1
+#     if not swapped:
+#         break
+# print("Sorted list: ", list)
+# print(count)
+
+# list = [2,4,1,9,7,6]
+# print(list)
+
+# list.sort()
+# print(list)
+
+# list.reverse()
+# print(list)
+
+# list = ["a","c","b","d","g"]
+# print(list)
+
+# list.sort()
+# print(list)
+
+# list.reverse
+# print(list)
+
+
+'''         MEMBERSHIP OPERATORS          '''
+
+# my_list = [0,3,12,8,2]
+# print(5 in my_list)
+# print(5 not in my_list)
+# print(12 in my_list)
+
+'''     "question"
+
+find the largest number in the list?
+find the given element ( 5 )in the list with index?
+
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]        '''
+
+
+'''_________________________________________________________________________________________________________________________________________'''
+
+'''         list Comprehension          '''
+
+# row = []
+
+# for i in range(8):
+#     row.append("White Pawn")
+
+# print(row)
+
+#                 #   List comprehension
+
+
+# row = ["White Pawn" for i in range(8)]
+
+# print(row)
+
+
+# squares = [x ** 2 for x in range(10)]
+
+# print(squares)
+
+# twos = [2 ** i for i in range(8)]
+
+# print(twos)
+
+
+# # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# odds = [x for x in squares if x % 2 != 0]
+
+# print(odds)
+
+board = []
+
+for i in range(8):
+    row = ["EMPTY" for i in range(8)]
+    board.append(row)
+
+print(board)
