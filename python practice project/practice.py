@@ -980,15 +980,15 @@ index => len(list) - (index + 1)      # positive index
 ''' second approach '''
 
 
-# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
 
-# largest = i[0]
+largest = i[0]
 
-# for element in range(len(i)):
-#     if largest < i[element]:
-#         largest = i[element]
-# else:
-#     print(largest)
+for element in range(len(i)):
+    if largest < i[element]:
+        largest = i[element]
+else:
+    print(largest)
 
 
 '''___________________________________________________________________________________________________________________________________________'''

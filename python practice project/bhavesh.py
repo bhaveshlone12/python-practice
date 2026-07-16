@@ -333,7 +333,25 @@ index_r     index_c             cout
 
 '''
 
-for i in range(1,6):
-    print(i)
-    for j in range(1,i+1):
-        print(j)
+# for i in range(1,6):
+#     print(i)
+#     for j in range(1,i+1):
+#         print(j)
+
+'''     "question"
+
+find the largest number in the list?
+find the given element ( 5 )in the list with index?
+
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]        '''
+
+
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+largest = my_list[5]
+
+for i in range(len(my_list)):
+    if largest < my_list[i]:
+        largest == my_list[i]
+
+print(largest)
