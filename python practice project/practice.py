@@ -1390,10 +1390,48 @@ Prod        - main branch
 
 '''example'''
 
-rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+# rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
 
-for building_index in range(len(rooms)):
-    print("Building: ", building_index+1)
-    for floor_index in range(len(rooms[building_index])):
-        print("Floor: ", floor_index+1)
-        print(rooms[building_index][floor_index])
+# for building_index in range(len(rooms)):
+#     print("Building: ", building_index+1)
+#     for floor_index in range(len(rooms[building_index])):
+#         print("Floor: ", floor_index+1)
+#         print(rooms[building_index][floor_index])
+
+# # in the second building, on the tenth floor 14
+
+# rooms [1] [9] [13] = True
+
+# #and release the second room on the fifth floor located in the first building
+
+# rooms [0] [4] [1] = False
+
+# # Check if there are any vacancies on the 15th floor of thr building...
+
+# '''
+# building        1       [2]
+# floors          1       [14]
+# rooms           20
+# '''
+
+# rooms [2] [14] [0] = True
+# rooms [2] [14] [1] = True
+# rooms [2] [14] [2] = True
+# rooms [2] [14] [3] = True
+# rooms [2] [14] [4] = True
+# rooms [2] [14] [5] = True
+
+# temp = -1
+
+# for room_index in range(len(rooms[2] [14])):
+#     if rooms [2] [14] [room_index] == False:
+#         temp = room_index
+#         break
+
+# if temp == -1:
+#     print("no rooms availabe")
+# else:
+#     print(f'{temp+1}th room is availabe')
+
+i = [3,1,-2]
+print(i[-1])
