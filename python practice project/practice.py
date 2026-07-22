@@ -980,15 +980,15 @@ index => len(list) - (index + 1)      # positive index
 ''' second approach '''
 
 
-i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+# i = [17, 3, 11, 5, 1, 9, 7, 15, 13]
 
-largest = i[0]
+# largest = i[0]
 
-for element in range(len(i)):
-    if largest < i[element]:
-        largest = i[element]
-else:
-    print(largest)
+# for element in range(len(i)):
+#     if largest < i[element]:
+#         largest = i[element]
+# else:
+#     print(largest)
 
 
 '''___________________________________________________________________________________________________________________________________________'''
@@ -1274,10 +1274,126 @@ my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]        '''
 
 # print(odds)
 
-board = []
+# board = []
 
-for i in range(8):
-    row = ["EMPTY" for i in range(8)]
-    board.append(row)
+# for i in range(8):
+#     row = ["EMPTY" for i in range(8)]
+#     board.append(row)
 
-print(board)
+# print(board)
+
+'''
+git fetch : git 
+
+Cafe Management
+Z
+Dev - Development / Dev Environment         dev.cafemanagement.com
+Testing - Stage Environment                 stage.cafemanagement.com
+Client Testing - UAT environment            uat.cafemanagement.com
+Users - Production Evironment               cafemanagement.com
+
+Dev         - Development branch
+            - feature/v1.0/khushi
+            - bugfix/v1.1/khushi
+
+
+|
+stage       - stage branch
+|
+uat         - uat branch
+|
+Prod        - main branch
+
+'''
+# print("Checking branch changes!")
+
+'''CHESS BOARD'''
+
+
+# board = []
+
+# for i in range(8):
+#     row = ["EMPTY" for i in range(8)]
+#     board.append(row)
+
+# print(board)
+
+# board [0] [0] = "ROOK"
+# board [0] [7] = "ROOK"
+# board [7] [0] = "ROOK"
+# board [7] [7] = "ROOK"
+
+# board [0] [1] = "KNIGHT"
+# board [0] [6] = "KNIGHT"
+# board [7] [1] = "KNIGHT"
+# board [7] [6] = "KNIGHT"
+
+# board [0] [2] = "BISHOP"
+# board [0] [5] = "BISHOP"
+# board [7] [2] = "BISHOP"
+# board [7] [5] = "BISHOP"
+
+# board [0] [3] = "KING"
+# board [7] [4] = "KING"
+
+
+# board [0] [4] = "QUEEN"
+# board [7] [3] = "QUEEN"
+
+# pawns = "PAWNS"
+
+# for index in range(len(board)):
+#     board [1] [index] = pawns
+#     board [6] [index] = pawns
+
+# for index in range(len(board)):
+#     print(board[index])
+
+
+'''TEMP PER DAY in a month'''
+
+# temps = [[0.0 for h in range(24)] for d in range(31)]
+# print(temps)
+
+# random = [20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 10]
+
+# for index in range(len(temps)):
+#     temps[index] [11] = random[index]
+
+# for index in range(len(temps)):
+#     print(temps[index])
+
+''' calculate the avg temp of month'''
+
+# sum = 0
+
+# for index in range(len(temps)):
+#     sum += temps[index] [11]
+# print(sum/31)
+
+# highest = 0
+
+# for index in range(len(temps)):
+#     for inner_index in range(len(temps[index])):
+#         if highest < temps[index][inner_index]:
+#             highest = temps[index][inner_index]
+# print(highest)
+
+# lowest = 0
+
+
+# for index in range(len(temps)):
+#     for inner_index in range(len(temps[index])):
+#         if lowest > temps[index][inner_index]:
+#             lowest = temps[index][inner_index]
+# print(lowest)
+
+'''example'''
+
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+
+for building_index in range(len(rooms)):
+    print("Building: ", building_index+1)
+    for floor_index in range(len(rooms[building_index])):
+        print("Floor: ", floor_index+1)
+        print(rooms[building_index][floor_index])
