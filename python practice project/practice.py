@@ -1433,5 +1433,92 @@ Prod        - main branch
 # else:
 #     print(f'{temp+1}th room is availabe')
 
-i = [3,1,-2]
-print(i[-1])
+
+'''  FUNCTIONS   '''
+
+            # FUNCTIONS : A function in Python is a reusable block of organized code designed to perform a single, focused task. 
+            #             Functions eliminate code repetition, make programs easier to read, and modularize complex code bases.
+
+# def message():
+#     print("enter a value: ")
+#     a = int(input())
+#     print(a)
+
+# message()
+# message()
+# message()
+
+# def message():
+#     print("Enter a value: ")
+
+# print("We start here.")
+# message()
+# print("The end is here,")
+
+# def message():
+#     print("Enter a value: ")
+#     return()
+#     a = int(input)
+    
+
+# b = message()
+
+# print(message())
+
+# message()
+
+
+# when we accept it is called as parameter, and whne we give its an argument.
+
+# def hi(num):
+#     print("hi")
+# hi(5)
+
+# def hello(n):   # defining a function
+#     print("hello,", n)  # Body of the function
+
+# name = input("Enter your name: ")  
+# hello(name) # calling the function
+
+# def message(number):
+#     print("Enter a number:", number)
+
+# message(1)
+
+# def message(num):
+#     print("number:", number)
+#     print("num:", num)
+
+# number = 1234
+# message(1)
+# print(number)
+
+# def message(what, number):
+#     print("Enter", what, "number", number)
+    
+# message("telephone", 11)
+# message("price", 5)
+# message("number", "number")
+
+def print_grade(name, marks):
+    grade = ""
+    if marks < 50:
+        grade = "D"
+    elif marks < 60:
+        grade = "C"
+    elif marks < 75:
+        grade = "B"
+    elif marks < 90:
+        grade = "A"
+    elif marks > 95:
+        grade = "A+"
+    print(f'Hello {name}, your Grade from {marks} is {grade}')
+
+
+print_grade("kaushal", 0)
+print_grade("Dipesh", 80)
+print_grade("Harshit", 70)
+print_grade("Luvkush", 60)
+print_grade("Shivani", 95)
+print_grade("Khushi", 55)
+print_grade(55, "kiran")    # This will give you error as you had given
