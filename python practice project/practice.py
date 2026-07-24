@@ -1523,11 +1523,83 @@ Prod        - main branch
 # print_grade("Khushi", 55)
 # print_grade(55, "kiran")    # This will give you error as you had given the las arrgument in pale of string you gave int and vise versa....
 
-def introduction(first_name, last_name = ""):
-    print("Hello, my name is", first_name, last_name)
+# def introduction(first_name, last_name = ""):
+#     print("Hello, my name is", first_name, last_name)
 
-introduction(first_name = "james", last_name = "bond")
-introduction(last_name = "bond", first_name = "james")
-introduction("Bomd", "Jmaes")
-introduction("Bhavesh")
-introduction("Bhavesh", "Lone")
+# introduction(first_name = "James", last_name = "Bond")
+# introduction(last_name = "Bond", first_name = "James")
+# introduction("Bond", "Jmaes")
+# introduction("Bhavesh")
+# introduction("Bhavesh", "Lone")
+
+# def adding(a,b,c):
+#     print(a, "+", b, "+", c, "=", a + b + c)
+
+# adding(1, 2, 3)
+# adding(c = 1, a = 2, b = 3)
+# adding(3, c = 1, b = 2)
+# adding(a = 2, 3, b = 3)     # Error
+# adding(3, a = 1, b = 2)     # Error
+
+# ek default perameter ke baad positional perameter nahi aa sakta ......
+
+
+# def happy_new_year(wishes = True):
+#     print("Three...")
+#     print("Two...")
+#     print("One...")
+#     if not wishes:
+#         return
+#     print("Happy New Year!")
+
+# happy_new_year()
+# happy_new_year(False)       # here program gets returned
+
+# def boring_function():
+#     return 123
+
+# x = boring_function()
+
+# print("The boring_function has returned its result, It's: ", x )
+
+# value = None
+# if value is None:
+#     print ("sorry you don't carry any value")
+
+# value = input ("Enter None: ")
+# if value == "":
+#     value = None
+# print(value)
+# print(type(value))
+
+
+# def strange_function(n):
+#     if(n % 2 == 0):
+#         return True
+
+# print(strange_function(2))
+# print(strange_function(1))
+
+
+# def list_sum(lst):
+#     s = 0
+#     for elem in lst:
+#         s += elem
+#     return s
+
+# print(list_sum([5, 4, 3]))
+
+def strange_list_fun(n):
+    strange_list = []
+
+    for i in range(0, n):
+        strange_list.insert(0, i)
+
+    return strange_list
+
+'''
+i       0   1   2   3   4
+[]      [4  3   2   1   0]
+'''
+
+print(strange_list_fun(5))
