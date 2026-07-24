@@ -1500,25 +1500,34 @@ Prod        - main branch
 # message("price", 5)
 # message("number", "number")
 
-def print_grade(name, marks):
-    grade = ""
-    if marks < 50:
-        grade = "D"
-    elif marks < 60:
-        grade = "C"
-    elif marks < 75:
-        grade = "B"
-    elif marks < 90:
-        grade = "A"
-    elif marks > 95:
-        grade = "A+"
-    print(f'Hello {name}, your Grade from {marks} is {grade}')
+# def print_grade(name, marks):
+#     grade = ""
+#     if marks < 50:
+#         grade = "D"
+#     elif marks < 60:
+#         grade = "C"
+#     elif marks < 75:
+#         grade = "B"
+#     elif marks < 90:
+#         grade = "A"
+#     elif marks > 95:
+#         grade = "A+"
+#     print(f'Hello {name}, your Grade from {marks} is {grade}')
 
 
-print_grade("kaushal", 0)
-print_grade("Dipesh", 80)
-print_grade("Harshit", 70)
-print_grade("Luvkush", 60)
-print_grade("Shivani", 95)
-print_grade("Khushi", 55)
-print_grade(55, "kiran")    # This will give you error as you had given
+# print_grade("kaushal", 0)
+# print_grade("Dipesh", 80)
+# print_grade("Harshit", 70)
+# print_grade("Luvkush", 60)
+# print_grade("Shivani", 95)
+# print_grade("Khushi", 55)
+# print_grade(55, "kiran")    # This will give you error as you had given the las arrgument in pale of string you gave int and vise versa....
+
+def introduction(first_name, last_name = ""):
+    print("Hello, my name is", first_name, last_name)
+
+introduction(first_name = "james", last_name = "bond")
+introduction(last_name = "bond", first_name = "james")
+introduction("Bomd", "Jmaes")
+introduction("Bhavesh")
+introduction("Bhavesh", "Lone")
