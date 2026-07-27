@@ -1589,17 +1589,115 @@ Prod        - main branch
 
 # print(list_sum([5, 4, 3]))
 
-def strange_list_fun(n):
-    strange_list = []
+# def strange_list_fun(n):
+#     strange_list = []
 
-    for i in range(0, n):
-        strange_list.insert(0, i)
+#     for i in range(0, n):
+#         strange_list.insert(0, i)
 
-    return strange_list
+#     return strange_list
 
 '''
 i       0   1   2   3   4
 []      [4  3   2   1   0]
 '''
 
-print(strange_list_fun(5))
+# print(strange_list_fun(5))
+
+# var = 2
+
+# def mul_by_var(x):
+#     return x * var
+
+# print(mul_by_var(7))
+
+# def mult(x):
+#     var = 5           # showding var in local variable
+#     return x * var
+
+# print(mult(7))
+
+# def adding(x):
+#     var = 7
+#     return x + var
+
+# print(adding(4)) # output: 11
+# print(var) # Error, because var is adding dunctions local scope.
+
+# def my_function():
+#     global var
+#     var = 2
+#     print("Do i know that varibale", var)
+
+# var = 1 
+# my_function()
+# print(var)
+
+" check this code"
+# var = 2
+# print(var) # output 2
+
+# def return_var():
+#     global var
+#     var = 5
+#     return
+    
+
+# print(return_var()) #output: 5
+# print(var) # output 5
+
+"================================="
+
+
+# def my_function(n):
+#     print("I got ", n)
+#     n += 1
+#     print("I have", n)
+
+# var = 1
+# my_function(var)
+# print(var)
+
+
+# def my_function(my_list_1): # Local
+#     print("Print #1:", my_list_1) # Local
+#     print("Print #1:", my_list_2) # Global
+#     my_list_1 = [0, 1]
+#     print("Print #1:", my_list_1) # Local
+#     print("Print #1:", my_list_2) # Global
+
+# my_list_2 = [2, 3] #Global list
+# my_function(my_list_2)
+# print("Print #5:", my_list_2) 
+
+
+
+def my_function(my_list_1): # Local
+    print("Print #1:", my_list_1) # Local
+    print("Print #1:", my_list_2) # Global
+    del my_list_1[0]
+    my_list_1.append(4)
+    print("Print #1:", my_list_1) # Local
+    print("Print #1:", my_list_2) # Global
+
+my_list_2 = [2, 3] #Global list
+my_function(my_list_2)
+print("Print #5:", my_list_2) 
+
+
+
+def my_function(my_list_1, v): # Local
+    print("Print #1:", my_list_1) # Local
+    print("Print #1:", my_list_2) # Global
+    del my_list_1[0]
+    my_list_1.append(4)
+    del v
+    print("Print #1:", my_list_1) # Local
+    print("Print #1:", my_list_2) # Global
+    # print("v:", v)
+    print("var:", var)
+
+my_list_2 = [2, 3] #Global list
+var = 2
+my_function(my_list_2, var)
+print("Print #5:", my_list_2) 
