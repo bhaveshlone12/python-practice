@@ -1705,19 +1705,25 @@ i       0   1   2   3   4
 # ! ALERT: code missing from date 27 to 30
 # * HIGHLIGHT: Resuming form date 31
 
-dictionary = {}
-while True:
-    name = input("Enter student's Name: ")
-    if name != "":
-        mark = float(input(f"Enter {name}'s score: "))
-        if name not in dictionary:
-            dictionary.update({name:(mark,)})
-        else:
-            dictionary[name] = dictionary[name] + (mark,)
-    else:
-        break 
-for name, marks in dictionary.items():
-    sum = 0
-    for mark in  marks:
-        sum += mark
-    print(f"{name}'s Average score is: {sum/len(marks)}")
+# dictionary = {}
+# while True:
+#     name = input("Enter student's Name: ")
+#     if name != "":
+#         mark = float(input(f"Enter {name}'s score: "))
+#         if name not in dictionary:
+#             dictionary.update({name:(mark,)})
+#         else:
+#             dictionary[name] = dictionary[name] + (mark,)
+#     else:
+#         break 
+# for name, marks in dictionary.items():
+#     sum = 0
+#     for mark in  marks:
+#         sum += mark
+#     print(f"{name}'s Average score is: {sum/len(marks)}")
+
+
+tup = (1,2,3,2,4,5,6,7,2,8,2,9)
+duplicates = tup.count(2)
+
+print(duplicates)
