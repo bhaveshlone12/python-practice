@@ -1672,32 +1672,52 @@ i       0   1   2   3   4
 
 
 
-def my_function(my_list_1): # Local
-    print("Print #1:", my_list_1) # Local
-    print("Print #1:", my_list_2) # Global
-    del my_list_1[0]
-    my_list_1.append(4)
-    print("Print #1:", my_list_1) # Local
-    print("Print #1:", my_list_2) # Global
+# def my_function(my_list_1): # Local
+#     print("Print #1:", my_list_1) # Local
+#     print("Print #1:", my_list_2) # Global
+#     del my_list_1[0]
+#     my_list_1.append(4)
+#     print("Print #1:", my_list_1) # Local
+#     print("Print #1:", my_list_2) # Global
 
-my_list_2 = [2, 3] #Global list
-my_function(my_list_2)
-print("Print #5:", my_list_2) 
+# my_list_2 = [2, 3] #Global list
+# my_function(my_list_2)
+# print("Print #5:", my_list_2) 
 
 
 
-def my_function(my_list_1, v): # Local
-    print("Print #1:", my_list_1) # Local
-    print("Print #1:", my_list_2) # Global
-    del my_list_1[0]
-    my_list_1.append(4)
-    del v
-    print("Print #1:", my_list_1) # Local
-    print("Print #1:", my_list_2) # Global
-    # print("v:", v)
-    print("var:", var)
+# def my_function(my_list_1, v): # Local
+#     print("Print #1:", my_list_1) # Local
+#     print("Print #1:", my_list_2) # Global
+#     del my_list_1[0]
+#     my_list_1.append(4)
+#     del v
+#     print("Print #1:", my_list_1) # Local
+#     print("Print #1:", my_list_2) # Global
+#     # print("v:", v)        # Erro: cannot access local variable 'v' where it is not associated with a value. reason see line 1694 used del v..... 
+#     print("var:", var)
 
-my_list_2 = [2, 3] #Global list
-var = 2
-my_function(my_list_2, var)
-print("Print #5:", my_list_2) 
+# my_list_2 = [2, 3] #Global list
+# var = 2
+# my_function(my_list_2, var)
+# print("Print #5:", my_list_2) 
+
+# ! ALERT: code missing from date 27 to 30
+# * HIGHLIGHT: Resuming form date 31
+
+dictionary = {}
+while True:
+    name = input("Enter student's Name: ")
+    if name != "":
+        mark = float(input(f"Enter {name}'s score: "))
+        if name not in dictionary:
+            dictionary.update({name:(mark,)})
+        else:
+            dictionary[name] = dictionary[name] + (mark,)
+    else:
+        break 
+for name, marks in dictionary.items():
+    sum = 0
+    for mark in  marks:
+        sum += mark
+    print(f"{name}'s Average score is: {sum/len(marks)}")
